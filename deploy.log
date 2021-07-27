@@ -1,0 +1,76 @@
+➜  optimism npm run migrate:ovm --network=optimistic_kovan
+
+> optimism-box@1.0.0 migrate:ovm
+> truffle migrate --reset --skip-dry-run --config truffle-config.ovm.js --network $npm_config_network
+
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/optimism/WardenToken.sol
+> Compilation warnings encountered:
+
+    /Users/aq1/Desktop/generic/optimism/contracts/optimism/WardenToken.sol:846:5: Warning: Documentation tag on non-public state variables will be disallowed in 0.7.0. You will need to use the @dev tag explicitly.
+    /// @notice A record of each accounts delegate
+    ^--------------------------------------------^
+
+> Artifacts written to /Users/aq1/Desktop/generic/optimism/build/optimism-contracts
+> Compiled successfully using:
+   - solc: 0.6.12
+
+
+
+Starting migrations...
+======================
+> Network name:    'optimistic_kovan'
+> Network id:      69
+> Block gas limit: 11000000 (0xa7d8c0)
+
+
+1_deploy_dop.js
+===============
+
+   Replacing 'DoppleToken'
+   -----------------------
+   > transaction hash:    0x5b8ea92c3e9fd9aa60115c83e248845ccd8c2d2e0326cda5a2c2f39a8faca8d4
+   > Blocks: 1            Seconds: 5
+   > contract address:    0xB2b1da226B4FFb4736Ef1E0D229688Cf2fB0e22F
+   > block number:        1000800
+   > block timestamp:     1627405744
+   > account:             0x9D442ec26dDBfAb9a6dDE3456C50C2ddd5435310
+   > balance:             3.99553015
+   > gas used:            6388278 (0x617a36)
+   > gas price:           0.015 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00009582417 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:       0.00009582417 ETH
+
+
+2_deploy_wad.js
+===============
+
+   Deploying 'WardenToken'
+   -----------------------
+   > transaction hash:    0xead19c1072454d6090f143745bd6a7997ea6da711ef2af31a8a72f8f0cfcacc8
+   > Blocks: 1            Seconds: 5
+   > contract address:    0xd8803cd3b3EB5D2DBeA0Cb79BcA7dECE69DCdCFD
+   > block number:        1000801
+   > block timestamp:     1627405744
+   > account:             0x9D442ec26dDBfAb9a6dDE3456C50C2ddd5435310
+   > balance:             3.993415
+   > gas used:            4642695 (0x46d787)
+   > gas price:           0.015 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000069640425 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:      0.000069640425 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.000165464595 ETH
